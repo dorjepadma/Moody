@@ -16,7 +16,7 @@ export default function reducer(state = initialState, action) {
       return { ...state, coffee: state.coffee 
     + 1 };
     case TAKE_NAP: 
-      return { ...state, nap: state.nap 
+      return { ...state, naps: state.naps 
     + 1 };
     case EAT_SNACK: 
       return { ...state, snacks: state.snacks 

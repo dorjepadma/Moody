@@ -19,7 +19,7 @@ export default function reducer(state = initialState, action) {
       return { ...state, nap: state.nap 
     + 1 };
     case EAT_SNACK: 
-      return { ...state, eat: state.eat 
+      return { ...state, snacks: state.snacks 
     + 1 };
     default:
       return state;

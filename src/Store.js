@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import reducer from './reducers';
+import reducer from './reducers/moodyReducer';
 
 export default createStore(
   reducer, 

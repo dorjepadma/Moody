@@ -1,8 +1,8 @@
 //refactored export
-export const isTired = state => state.coffee < 1 && state.naps < 1;
+export const isTired = state => state.coffee < 2 && state.naps < 2;
 export const isHyper = state => state.coffee > 3 && state.study > 3;
 export const isEducated = state => state.study > 2;
-export const isHungry = state => state.snacks < 1;
+export const isHungry = state => state.snacks < 2;
 
 export const getFace = state => {
   if(isTired(state) && isHungry(state)) return '🤬';

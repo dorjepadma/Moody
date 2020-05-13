@@ -1,10 +1,10 @@
 import { STUDY, EAT_SNACK, TAKE_NAP, DRINK_COFFEE } from '../actions/moodyActions';
 
 const initialState = {
-  coffees: 0,
+  coffee: 0,
   snacks: 0,
   naps: 0,
-  studies: 0
+  study: 0
 };
 
 export default function reducer(state = initialState, action) {
@@ -16,10 +16,10 @@ export default function reducer(state = initialState, action) {
       return { ...state, coffee: state.coffee 
     + 1 };
     case TAKE_NAP: 
-      return { ...state, naps: state.naps 
+      return { ...state, naps: state.nap 
     + 1 };
     case EAT_SNACK: 
-      return { ...state, snacks: state.snacks 
+      return { ...state, snacks: state.snack 
     + 1 };
     default:
       return state;
